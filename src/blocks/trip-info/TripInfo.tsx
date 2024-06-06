@@ -1,4 +1,4 @@
-import React, { MutableRefObject, ReactNode } from "react";
+import React from "react";
 import "./TripInfo.scss";
 import { ITripShortInfo } from "../../types/types";
 
@@ -32,10 +32,15 @@ export const TripInfo = ({ data, scrollEl }: IProps): JSX.Element => {
           <span className="text-light">Flight</span>
           <span className="text-regular">{flight}</span>
         </div>
+        <div className="trip-info-item">
+          <button
+            onClick={handleScrollClick}
+            className="trip-info-flight text-button"
+          >
+            View itinerary
+          </button>
+        </div>
       </div>
-      <button onClick={handleScrollClick} className="trip-info-flight">
-        View itinerary
-      </button>
     </div>
   );
 };

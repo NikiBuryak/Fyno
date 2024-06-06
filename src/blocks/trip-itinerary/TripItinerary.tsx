@@ -102,6 +102,7 @@ export const TripItinerary = ({ title }: IProps) => {
             singleValue: (styles) => ({
               ...styles,
               margin: 0,
+              textAlign: "center",
             }),
             menuList: (styles) => ({
               ...styles,

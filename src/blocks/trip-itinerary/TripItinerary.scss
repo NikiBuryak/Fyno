@@ -3,13 +3,23 @@
 .trip-itinerary {
   padding: 24px 0 20px;
 
+  @media (max-width: $device-small-2) {
+    padding: 15px 0 20px;
+  }
+
   &-title {
     margin: 0;
     padding-bottom: 24px;
-    font-size: 28px;
+    font-size: 22px;
     line-height: 28px;
     font-weight: 600;
     font-family: $font-bold;
+
+    @media (max-width: $device-small-2) {
+      padding-bottom: 15px;
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 
   &-configurator {
@@ -17,24 +27,44 @@
     justify-content: flex-start;
     align-items: center;
     gap: 16px;
-    padding: 24px;
+    padding: 24px 16px 24px 24px;
     background-color: $color-light-blue;
     border-radius: 16px;
     box-shadow: 0px 2px 3px 0px #dce3f680;
     box-shadow: 0px 0px 0px 0.5px #ccd7f1;
 
+    @media (max-width: $device-small) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: $device-small-2) {
+      padding: 16px 12px 16px 16px;
+    }
+
     &-flight {
       display: flex;
       align-items: center;
       gap: 4px;
+
+      @media (max-width: $device-small) {
+        width: 100%;
+      }
     }
 
     &-persons {
       min-width: 70px;
+      @media (max-width: $device-small) {
+        flex-grow: 1;
+        max-width: 130px;
+      }
     }
   }
 
   &-calendar {
     max-width: 157px;
+    @media (max-width: $device-small) {
+      max-width: unset;
+      flex-grow: 1;
+    }
   }
 }

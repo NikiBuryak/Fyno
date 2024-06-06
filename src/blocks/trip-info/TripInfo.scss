@@ -10,11 +10,23 @@
   box-shadow: 0px 2px 3px 0px #00000008;
   box-shadow: 0px 0px 0px 0.5px #9797974d;
 
+  @media (max-width: $device-small-2) {
+    padding: 15px;
+    margin: 15px 0;
+  }
+
   &-items {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 64px;
+    width: 100%;
+
+    @media (max-width: $device-small-1) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
   }
 
   &-item {
@@ -22,6 +34,21 @@
     flex-direction: column;
     align-items: start;
     line-height: 24px;
+
+    @media (max-width: $device-small-1) {
+      flex-grow: 0;
+      align-items: center;
+    }
+
+    &:last-child {
+      flex-grow: 1;
+      align-items: flex-end;
+
+      @media (max-width: $device-small-1) {
+        flex-grow: 0;
+        align-items: center;
+      }
+    }
 
     &-label {
       font-size: 15px;
@@ -40,13 +67,9 @@
 
   &-flight {
     color: $color-purple;
-    font-size: 15px;
-    line-height: 32px;
-    letter-spacing: -0.1px;
     border: 0;
     outline: none;
     background-color: transparent;
-    font-weight: 600;
     font-family: $font-bold;
     cursor: pointer;
   }

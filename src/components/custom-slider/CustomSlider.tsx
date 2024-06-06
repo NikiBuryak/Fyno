@@ -1,4 +1,4 @@
-import React, { LegacyRef, useEffect, useRef } from "react";
+import React, { useRef } from "react";
 
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -19,7 +19,7 @@ export const CustomSlider = ({ items }: IProps) => {
   return (
     <Swiper
       spaceBetween={15}
-      slidesPerView={3}
+      slidesPerView={1}
       modules={[Navigation]}
       navigation={{
         prevEl: navigationPrevRef.current,
@@ -30,6 +30,14 @@ export const CustomSlider = ({ items }: IProps) => {
         swiper.navigation.prevEl = navigationPrevRef.current;
         swiper.navigation.nextEl = navigationNextRef.current;
         swiperRef.current = swiper;
+      }}
+      breakpoints={{
+        500: {
+          slidesPerView: 2,
+        },
+        720: {
+          slidesPerView: 3,
+        },
       }}
     >
       {items?.map((item, index) => (

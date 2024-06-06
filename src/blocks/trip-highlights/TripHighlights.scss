@@ -3,16 +3,31 @@
 .trip-highlights {
   padding: 32px 0;
 
+  @media (max-width: $device-small-2) {
+    padding: 15px 0;
+  }
+
   &-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
 
+    @media (max-width: $device-small-1) {
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
     &-title {
       font-size: 28px;
       line-height: 36px;
       font-family: $font-bold;
+      margin: 0;
+
+      @media (max-width: $device-small-2) {
+        font-size: 20px;
+        line-height: 28px;
+      }
     }
 
     &-actions {
@@ -39,9 +54,11 @@
       }
     }
 
-    &-text {
+    &-text.text-regular {
       font-family: $font-regular;
       font-weight: 400;
+      margin: 0;
+      padding-top: 16px;
     }
   }
 }

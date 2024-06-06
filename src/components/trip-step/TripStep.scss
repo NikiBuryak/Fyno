@@ -5,10 +5,22 @@
   position: relative;
   padding-bottom: 20px;
 
+  @media (max-width: $device-small-2) {
+    padding-bottom: 14px;
+    padding-left: 32px;
+  }
+
   &.description {
     padding-bottom: 36px;
+
+    @media (max-width: $device-small-2) {
+      padding-bottom: 24px;
+    }
   }
   &.stay {
+    @media (max-width: $device-small-2) {
+      padding-bottom: 5px;
+    }
     .trip-step-line {
       background-color: transparent;
     }
@@ -16,14 +28,27 @@
 
   &-header {
     padding-bottom: 8px;
+
+    @media (max-width: $device-small-2) {
+      padding-bottom: 4px;
+    }
     &.indented {
       padding-bottom: 16px;
+      @media (max-width: $device-small-2) {
+        padding-bottom: 8px;
+      }
     }
 
     &-title {
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      @media (max-width: $device-small-2) {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+      }
 
       h4 {
         font-size: 20px;
@@ -40,10 +65,14 @@
       gap: 16px;
       color: $color-gray-light;
     }
+
+    &-place.text-light {
+      color: $color-gray-light;
+    }
   }
 
   &-body {
-    &-description {
+    &-description.text-regular {
       margin: 0;
       font-family: $font-regular;
       font-weight: 400;
@@ -79,6 +108,10 @@
     display: flex;
     justify-content: center;
     align-items: start;
+
+    @media (max-width: $device-small-2) {
+      left: 10px;
+    }
 
     &-icon {
       width: 24px;

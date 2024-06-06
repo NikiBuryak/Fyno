@@ -24,6 +24,7 @@ export const CustomButton = ({
 }: IProps) => {
   const classes = [
     "custom-button",
+    "text-button",
     `custom-button-${design}`,
     `radius-${borderRadius}`,
   ];

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Select, { SingleValue } from "react-select";
 import { CustomButton } from "../../components/custom-button/CustomButton";
 
@@ -25,10 +25,10 @@ export const TripSelect = ({
   return (
     <div className="trip-select">
       <div className="trip-select-config">
-        <span className="trip-select-config-item">Trips</span>
-        <span className="trip-select-config-item">Iceland</span>
+        <span className="trip-select-config-item text-button">Trips</span>
+        <span className="trip-select-config-item text-button">Iceland</span>
         <Select
-          className="trip-select-config-item"
+          className="trip-select-config-item text-button"
           options={selectOptions}
           value={selectOptions.filter((el) => el.value === selected)}
           onChange={handleChangeSelect}
@@ -41,6 +41,8 @@ export const TripSelect = ({
               ...styles,
               border: 0,
               boxShadow: "none",
+              alignContent: "center",
+              minHeight: "32px",
             }),
             valueContainer: (styles) => ({ ...styles, border: 0, padding: 0 }),
             dropdownIndicator: (styles) => ({ ...styles, padding: "0 4px" }),

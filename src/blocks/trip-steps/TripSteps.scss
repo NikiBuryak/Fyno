@@ -2,4 +2,8 @@
 
 .trip-steps {
   padding-top: 20px;
+
+  @media (max-width: $device-small-2) {
+    padding-top: 15px;
+  }
 }

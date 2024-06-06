@@ -9,6 +9,11 @@
   border-radius: 8px;
   background-color: $color-white;
 
+  @media (max-width: $device-small) {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
   svg {
     min-width: 32px;
   }

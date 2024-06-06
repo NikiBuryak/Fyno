@@ -1,6 +1,10 @@
 @import "src/styles/variables.scss";
 
 .custom-input {
+  @media (max-width: $device-small) {
+    flex-grow: 1;
+  }
+
   &-label {
     margin-bottom: 5px;
   }

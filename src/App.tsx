@@ -1,8 +1,5 @@
 import React, { useRef, useState } from "react";
 import { TripSelect } from "./blocks/trip-select/TripSelect";
-
-import "./App.scss";
-import "./styles/index.scss";
 import { TripInfo } from "./blocks/trip-info/TripInfo";
 import {
   tripImages as images,
@@ -17,6 +14,8 @@ import { TripItinerary } from "./blocks/trip-itinerary/TripItinerary";
 import { TripSteps } from "./blocks/trip-steps/TripSteps";
 import { TripGallery } from "./blocks/trip-gallery/TripGallery";
 
+import "./App.scss";
+
 const firstStep = tripStep1;
 const secondStep = tripStep2;
 
@@ -30,7 +29,6 @@ export default function App() {
 
   return (
     <div className="container">
-      <h1>поправить ховер у кнопок</h1>
       <TripSelect
         selectOptions={daysOption}
         selected={selectedDays}

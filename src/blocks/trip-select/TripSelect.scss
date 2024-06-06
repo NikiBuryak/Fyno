@@ -16,13 +16,12 @@
 
     &-item {
       padding: 0 20px;
-      font-size: 15px;
-      line-height: 32px;
-      letter-spacing: -0.1px;
       color: $color-black;
-      font-weight: 600;
-      font-family: $font-bold;
       align-content: center;
+
+      @media (max-width: $device-small-1) {
+        padding: 0 10px;
+      }
 
       &:nth-child(2) {
         border-right: 1px solid $color-gray;

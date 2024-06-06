@@ -104,6 +104,10 @@
     gap: 24px;
     padding: 12px 0;
 
+    @media (max-width: $device-small-1) {
+      gap: 10px;
+    }
+
     &:last-child {
       padding-bottom: 24px;
     }
@@ -118,6 +122,10 @@
       border-radius: 20px;
       z-index: 3;
       background-color: $color-grey-line-icon;
+
+      @media (max-width: $device-small-2) {
+        left: 5px;
+      }
     }
 
     .trip-card {
