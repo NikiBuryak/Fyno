@@ -1,0 +1,33 @@
+@import "src/styles/variables.scss";
+
+.trip-select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+
+  &-config {
+    display: flex;
+    box-shadow: 0px 2px 3px 0px #00000008;
+    box-shadow: 0px 0px 0px 0.5px #9797974d;
+    align-items: stretch;
+    border-radius: 16px;
+    padding: 0 8px 0 16px;
+
+    &-item {
+      padding: 0 20px;
+      font-size: 15px;
+      line-height: 32px;
+      letter-spacing: -0.1px;
+      color: $color-black;
+      font-weight: 600;
+      font-family: $font-bold;
+      align-content: center;
+
+      &:nth-child(2) {
+        border-right: 1px solid $color-gray;
+        border-left: 1px solid $color-gray;
+      }
+    }
+  }
+}

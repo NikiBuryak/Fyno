@@ -1,0 +1,12 @@
+@import "src/styles/variables.scss";
+
+.trip-gallery {
+  position: relative;
+
+  &-btn {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    padding-left: 4px;
+  }
+}

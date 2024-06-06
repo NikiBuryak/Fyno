@@ -1,0 +1,85 @@
+@import "./fonts.scss";
+@import "./variables.scss";
+
+html {
+  font-size: 100%;
+  width: 100%;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  color: $color-black;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF-Regular", sans-serif;
+}
+
+.font-regular {
+  font-family: $font-regular;
+}
+.font-medium {
+  font-family: $font-medium;
+}
+.font-bold {
+  font-family: $font-bold;
+}
+
+.text-ultralight {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  color: $color-gray-dark;
+  letter-spacing: -0.08px;
+  font-family: $font-regular;
+}
+
+.text-light {
+  font-size: 15px;
+  font-weight: 400;
+  color: $color-gray-dark;
+  letter-spacing: -0.2px;
+  line-height: 21px;
+}
+
+.text-regular {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: $font-bold;
+  letter-spacing: -0.3px;
+  line-height: 24px;
+}
+
+.text-title {
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: -0.41px;
+  font-weight: 600;
+  font-family: $font-bold;
+}
+
+.icon-button {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+  cursor: pointer;
+  svg {
+    color: $color-gray-dark;
+    transition: 0.5s;
+  }
+
+  &:hover {
+    svg {
+      color: $color-black;
+    }
+  }
+}

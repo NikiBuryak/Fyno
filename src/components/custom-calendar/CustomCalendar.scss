@@ -1,0 +1,20 @@
+@import "src/styles/variables.scss";
+
+.custom-calendar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 16px 4px 4px;
+  border: 1px solid $color-gray;
+  border-radius: 8px;
+  background-color: $color-white;
+
+  svg {
+    min-width: 32px;
+  }
+
+  &-input {
+    border: 0;
+    width: 100%;
+  }
+}

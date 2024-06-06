@@ -1,0 +1,108 @@
+@import "src/styles/variables.scss";
+
+.trip-step {
+  padding-left: 48px;
+  position: relative;
+  padding-bottom: 20px;
+
+  &.description {
+    padding-bottom: 36px;
+  }
+  &.stay {
+    .trip-step-line {
+      background-color: transparent;
+    }
+  }
+
+  &-header {
+    padding-bottom: 8px;
+    &.indented {
+      padding-bottom: 16px;
+    }
+
+    &-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h4 {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: $font-bold;
+        letter-spacing: 0.38px;
+        margin: 0 0 4px;
+      }
+    }
+
+    &-places {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: $color-gray-light;
+    }
+  }
+
+  &-body {
+    &-description {
+      margin: 0;
+      font-family: $font-regular;
+      font-weight: 400;
+      color: $color-gray-dark;
+    }
+
+    &-plan-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .text-title {
+        margin: 0;
+      }
+    }
+    &-plan-settings {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      &-icon {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  &-line {
+    position: absolute;
+    left: 16px;
+    height: 100%;
+    width: 2px;
+    background-color: $color-grey-line;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    &-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 20px;
+      position: absolute;
+      background-color: $color-grey-line-icon;
+      color: $color-white;
+
+      &.description {
+        background-color: $color-purple;
+        line-height: 24px;
+        color: $color-white;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        font-weight: 500;
+        font-family: $font-regular;
+      }
+    }
+  }
+
+  &-day {
+    padding-top: 8px;
+  }
+}

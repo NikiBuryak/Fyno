@@ -1,0 +1,40 @@
+@import "src/styles/variables.scss";
+
+.trip-itinerary {
+  padding: 24px 0 20px;
+
+  &-title {
+    margin: 0;
+    padding-bottom: 24px;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 600;
+    font-family: $font-bold;
+  }
+
+  &-configurator {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    background-color: $color-light-blue;
+    border-radius: 16px;
+    box-shadow: 0px 2px 3px 0px #dce3f680;
+    box-shadow: 0px 0px 0px 0.5px #ccd7f1;
+
+    &-flight {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    &-persons {
+      min-width: 70px;
+    }
+  }
+
+  &-calendar {
+    max-width: 157px;
+  }
+}

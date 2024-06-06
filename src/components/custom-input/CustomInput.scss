@@ -1,0 +1,14 @@
+@import "src/styles/variables.scss";
+
+.custom-input {
+  &-label {
+    margin-bottom: 5px;
+  }
+
+  &-field {
+    padding: 10px 16px;
+    border: 1px solid $color-gray;
+    border-radius: 8px;
+    width: 100%;
+  }
+}
