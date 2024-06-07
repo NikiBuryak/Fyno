@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Fyno/static/css/main.b828cccf.css",
-    "main.js": "/Fyno/static/js/main.6fb0ed16.js",
+    "main.css": "/Fyno/static/css/main.0fd5a07c.css",
+    "main.js": "/Fyno/static/js/main.9a90e179.js",
     "static/media/KatlaIceCave.png": "/Fyno/static/media/KatlaIceCave.057992c931e30ce4232c.png",
     "static/media/GullfossWaterfall.png": "/Fyno/static/media/GullfossWaterfall.08d7658bcce0ff12066e.png",
     "static/media/ReykjadalurValley.png": "/Fyno/static/media/ReykjadalurValley.6e7a71505bc873cddc0b.png",
@@ -35,11 +35,11 @@
     "static/media/DragDrop.svg": "/Fyno/static/media/DragDrop.772e21f7267710daa3ed402cbf435ba5.svg",
     "static/media/Plus.svg": "/Fyno/static/media/Plus.4e8ac2592bd902b911aecddd006d654b.svg",
     "static/media/ArrowRight.svg": "/Fyno/static/media/ArrowRight.304b5632a35ad87fc0366059e47ad96f.svg",
-    "main.b828cccf.css.map": "/Fyno/static/css/main.b828cccf.css.map",
-    "main.6fb0ed16.js.map": "/Fyno/static/js/main.6fb0ed16.js.map"
+    "main.0fd5a07c.css.map": "/Fyno/static/css/main.0fd5a07c.css.map",
+    "main.9a90e179.js.map": "/Fyno/static/js/main.9a90e179.js.map"
   },
   "entrypoints": [
-    "static/css/main.b828cccf.css",
-    "static/js/main.6fb0ed16.js"
+    "static/css/main.0fd5a07c.css",
+    "static/js/main.9a90e179.js"
   ]
 }
