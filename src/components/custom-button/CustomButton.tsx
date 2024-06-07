@@ -1,4 +1,4 @@
-import React, { FunctionComponent, SVGProps } from "react";
+import React from "react";
 
 import "./CustomButton.scss";
 import { CutsomIcon } from "../custom-icon/CutsomIcon";

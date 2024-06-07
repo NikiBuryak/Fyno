@@ -12,6 +12,7 @@ export const CustomGallary = ({ images }: IProps): JSX.Element => {
     <div className="custom-gallery">
       {images.map((el) => (
         <img
+          alt="Trip place"
           key={el.url}
           src={el.url}
           className={`custom-gallery-item ${el.isMain && "item-main"}`}
